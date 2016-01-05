@@ -1,4 +1,8 @@
 body {
-    background-color: #483737ff;
+    background-color: #483737;
     width: 80%;
+}
+
+p, a, h1 {
+    color: #ccffaa;
 }
