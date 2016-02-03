@@ -1,8 +1,30 @@
 body {
-    background-color: #483737;
+    background-color: rgb(0, 188, 212);
+}
+
+#fixed-tab-1 {
     text-align: center;
 }
 
-p, a, h1, h2 {
-    color: #ccffaa;
+.demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+}
+
+.demo-card-square > .douyu_icon {
+    color: #fff;
+    background: url('assets/douyu.jpg') bottom right no-repeat #46B6AC;
+}
+
+.demo-card-square > .bilibli_icon {
+    color: #fff;
+    background: url('assets/bili.jpg') bottom right no-repeat #46B6AC;
+}
+
+.demo-card-square > .pandatv_icon {
+    color: #fff;
+    background: url('assets/panda.jpg') bottom right no-repeat #46B6AC;
+}
+.demo-list-icon {
+    width: 300px;
 }

@@ -1,28 +1,138 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>707</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="css/text" href="index.css">
+  <meta charset="utf-8">
+  <title>707</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="material.min.css">
+  <script type="text/javascript" src="material.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
-    <h1>欢迎来到707的主页</h1>
-    <p>Email:707472783@qq.com</p>
-    
-    <h2>直播地址</h2>
-    <p><a href="http://www.douyutv.com/im707">斗鱼TV</a></p>
-    <p><a href="http://live.bilibili.com/15111">bilibili</a></p>
-    <p><a href="http://www.panda.tv/141173">熊猫TV</a></p>
-    
-    <h2>Aptana</h2>
-    <p><a href="http://pan.baidu.com/s/1qXoHlQO">Mac 3.6.1</a></p>
-    <p><a href="http://pan.baidu.com/s/1nuqjonf">Win 3.6.1</a></p>
-    <p><a href="http://pan.baidu.com/s/1NzyAq">Linux x86 3.6.1</a></p>
-    <p><a href="http://pan.baidu.com/s/1o7sPb1w">Linux x64 3.6.1</a></p>
-    <p><a href="http://pan.baidu.com/s/1dEs1yST">eclipse plugin 3.7.0</a></p>
-    
-    <h2>C语言</h2>
-    <p><a href="http://pan.baidu.com/s/1pJS5OJD">C语言程序设计</a></p>
+  <!-- Simple header with fixed tabs. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">
+                  <img src="assets/favicon.ico" alt="">
+                  欢迎来到707的主页</span>
+      </div>
+      <!-- Tabs -->
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">直播地址</a>
+        <a href="#fixed-tab-2" class="mdl-layout__tab">Aptana</a>
+        <a href="#fixed-tab-3" class="mdl-layout__tab">C语言</a>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+        <div class="page-content mdl-grid">
+          <!-- douyu -->
+          <div class="mdl-cell mdl-cell--4-col">
+            <!-- Square card -->
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand douyu_icon">
+                <h2 class="mdl-card__title-text">斗鱼TV</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                最常用的直播平台
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://www.douyutv.com/im707">观看</a>
+              </div>
+            </div>
+          </div>
+          <!-- bili -->
+          <div class="mdl-cell mdl-cell--4-col">
+            <!-- Square card -->
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand bilibli_icon">
+                <h2 class="mdl-card__title-text">bilibili</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                最不常用的直播平台
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://live.bilibili.com/15111">观看</a>
+              </div>
+            </div>
+          </div>
+          <!-- panda -->
+          <div class="mdl-cell mdl-cell--4-col">
+            <!-- Square card -->
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand pandatv_icon">
+                <h2 class="mdl-card__title-text">熊猫TV</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                因不明原因被封
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://www.panda.tv/141173">观看</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+        <div class="page-content">
+          <div class="mdl-grid">
+            <!-- Icon List -->
+            <ul class="demo-list-icon mdl-list">
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+    <i class="material-icons">get_app</i>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://pan.baidu.com/s/1nuqjonf">Win 3.6.1</a>
+</span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+    <i class="material-icons">get_app</i>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://pan.baidu.com/s/1dEs1yST">eclipse plugin 3.7.0</a>
+  </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+    <i class="material-icons">get_app</i>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://pan.baidu.com/s/1qXoHlQO">Mac 3.6.1</a>
+  </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+    <i class="material-icons">get_app</i>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://pan.baidu.com/s/1o7sPb1w">Linux x64 3.6.1</a>
+  </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+    <i class="material-icons">get_app</i>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://pan.baidu.com/s/1NzyAq">Linux x86 3.6.1</a>
+  </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+        <div class="page-content mdl-grid">
+          <!-- Icon List -->
+          <ul class="demo-list-icon mdl-list">
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+    <i class="material-icons">get_app</i>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://pan.baidu.com/s/1pJS5OJD">C语言程序设计</a>
+</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>
