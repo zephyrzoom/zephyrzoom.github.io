@@ -13,18 +13,19 @@ body {
 
 .demo-card-square > .douyu_icon {
     color: #fff;
-    background: url('assets/douyu.jpg') bottom right no-repeat #46B6AC;
+    background: url('assets/douyu.jpg') center / cover #46B6AC;
 }
 
 .demo-card-square > .bilibli_icon {
     color: #fff;
-    background: url('assets/bili.jpg') bottom right no-repeat #46B6AC;
+    background: url('assets/bili.jpg') center / cover #46B6AC;
 }
 
 .demo-card-square > .pandatv_icon {
     color: #fff;
-    background: url('assets/panda.jpg') bottom right no-repeat #46B6AC;
+    background: url('assets/panda.jpg') center / cover #46B6AC;
 }
+
 .demo-list-icon {
     width: 300px;
 }
