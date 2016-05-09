@@ -46,3 +46,4 @@ void func(char *str)
 使用上面的函数，如果没有遇到'\r'过着'\n'则可能会一直复制导致buf溢出。
 
 ![stackoverflow](/image/stackoverflow.png)
+dest参数是一个数组，由于栈空间是向低地址增长，而缓冲区向高地址增长。所以通过溢出缓冲区可以覆盖函数的返回地址，使返回地址跳转到shellcode。
