@@ -10,4 +10,16 @@ categories: jekyll update
 
 动态二进制修正反编译结果：动态执行过程种识别函数入口和调用地址，添加到注释，用来对间接调用修复。
 
-基于库函数参数反向修正：通过所调用库函数的参数，识别出变量的类型，反向修正前面的错误的变量类型。
+基于库函数参数反向修正：通过所调用库函数的参数，识别出变量的类型，反向通过AST修正前面的错误的变量类型。
+
+`
+void copy_str(char *dest, char *src)
+{
+    int n;
+    if (strlen(src) == 0)
+        return;
+    n = strlen(src);
+    memcpy(dest, src, n);
+    return;
+}
+`
