@@ -45,4 +45,4 @@ void func(char *str)
 ```
 使用上面的函数，如果没有遇到'\r'过着'\n'则可能会一直复制导致buf溢出。
 
-![stackoverflow](_img/stackoverflow.png)
+![stackoverflow](/image/stackoverflow.png)
