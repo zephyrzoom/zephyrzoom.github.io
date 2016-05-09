@@ -12,7 +12,7 @@ categories: jekyll update
 
 基于库函数参数反向修正：通过所调用库函数的参数，识别出变量的类型，反向通过AST修正前面的错误的变量类型。
 
-`
+```c
 void copy_str(char *dest, char *src)
 {
     int n;
@@ -22,4 +22,27 @@ void copy_str(char *dest, char *src)
     memcpy(dest, src, n);
     return;
 }
-`
+```
+如果src的长度超过dest的长度就会溢出。
+
+```c
+void func(char *str)
+{
+    char buf[32];
+    int i = 0;
+    if (str == null) return;
+    memset(buf, 0, sizeof(buf));
+    while (*str != ' ') {
+        if (*str == '\r' || *str == '\n')
+            break;
+        buf[i] = *str;
+        ++i;
+        ++str;
+    }
+    ...
+    return;
+}
+```
+使用上面的函数，如果没有遇到'\r'过着'\n'则可能会一直复制导致buf溢出。
+
+![stackoverflow](../_img/stackoverflow.png)
