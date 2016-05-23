@@ -8,7 +8,9 @@ categories: jekyll update
 
 程序结构的表示：使用AST。
 
-动态二进制修正反编译结果：动态执行过程种识别函数入口和调用地址，添加到注释，用来对间接调用修复。
+hex-rays反编译的常见错误：无法识别间接调用、死代码（未识别的汇编）、数据类型识别错误、变量定义缺失、内嵌汇编、使用寄存器做变量名。
+
+动态二进制修正反编译结果：动态执行过程中识别函数入口和调用地址，添加到注释，用来对间接调用修复。
 
 基于库函数参数反向修正：通过所调用库函数的参数，识别出变量的类型，反向通过AST修正前面的错误的变量类型。
 
@@ -39,7 +41,6 @@ void func(char *str)
         ++i;
         ++str;
     }
-    ...
     return;
 }
 ```
@@ -47,3 +48,40 @@ void func(char *str)
 
 ![stackoverflow](/image/stackoverflow.png)
 dest参数是一个数组，由于栈空间是向低地址增长，而缓冲区向高地址增长。所以通过溢出缓冲区可以覆盖函数的返回地址，使返回地址跳转到shellcode。
+
+缓冲区溢出的原因：库函数调用出错和循环拷贝越界。
+
+两种循环拷贝的示例
+```c
+char *bufCopy(char *dst, char *src)
+{
+    char *p = dst;
+    while (*src != '\0') {
+        *p++ = *src++;
+    }
+    *p = '\0';
+    return dst;
+}
+```
+
+```c
+char *bufCopy(char *dst, char *src)
+{
+    int t = 0;
+    int a = 0;
+    while (*(src + t) != '\0') {
+        *(dst + t) = *(src + t);
+        t = a + 1;
+        a = t;
+    }
+    *(dst + t) = '\0';
+    return dst;
+}
+```
+
+循环拷贝越界的特征：存在循环、循环内存在缓冲区写操作、循环结束条件非常量。
+
+列表：
+- aaa
+- bbb
+- ccc

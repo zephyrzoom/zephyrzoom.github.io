@@ -6,4 +6,6 @@ categories: jekyll update
 ---
 写的文章放在_posts文件中，文件名以`年-月-日-名字.md`来命名。
 
-文章的名字由md文件的YAML部分的title定义
+文章的名字由md文件的YAML部分的title定义。
+
+要通过项目路径访问自定义的文件，文件夹的名字不能以下划线开头。
