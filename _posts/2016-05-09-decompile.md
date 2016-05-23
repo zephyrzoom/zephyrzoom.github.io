@@ -51,7 +51,8 @@ dest参数是一个数组，由于栈空间是向低地址增长，而缓冲区�
 
 缓冲区溢出的原因：库函数调用出错和循环拷贝越界。
 
-两种循环拷贝的示例
+两种循环拷贝的示例：
+
 ```c
 char *bufCopy(char *dst, char *src)
 {
@@ -63,6 +64,7 @@ char *bufCopy(char *dst, char *src)
     return dst;
 }
 ```
+固定步长：
 
 ```c
 char *bufCopy(char *dst, char *src)
@@ -81,7 +83,6 @@ char *bufCopy(char *dst, char *src)
 
 循环拷贝越界的特征：存在循环、循环内存在缓冲区写操作、循环结束条件非常量。
 
-列表：
-- aaa
-- bbb
-- ccc
+![ud-chain](/image/ud-chain.png)
+
+通过在AST中寻找自依赖或者如上图的扩展自依赖找到循环拷贝的代码。
