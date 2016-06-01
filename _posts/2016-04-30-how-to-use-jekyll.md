@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll的使用"
+title:  Jekyll的使用
 date:   2016-04-30 17:15:33 +0800
 categories: jekyll update
 ---

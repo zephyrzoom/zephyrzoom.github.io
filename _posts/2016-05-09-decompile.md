@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "基于hex-rays缓冲区溢出漏洞挖掘"
+title: 基于hex-rays缓冲区溢出漏洞挖掘
 date: 2016-05-09 15:17:00 +0800
 categories: jekyll update
 ---
