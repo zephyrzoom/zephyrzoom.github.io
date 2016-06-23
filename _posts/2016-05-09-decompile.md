@@ -2,7 +2,6 @@
 layout: post
 title: 基于hex-rays缓冲区溢出漏洞挖掘
 date: 2016-05-09 15:17:00 +0800
-categories: jekyll update
 ---
 漏洞挖掘技术有：手工测试、Fuzzing测试、二进制比对、静态分析、动态分析。
 
