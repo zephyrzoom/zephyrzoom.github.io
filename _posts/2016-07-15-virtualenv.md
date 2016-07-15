@@ -1,7 +1,7 @@
 ---
 layout: post
 title: virtualenv安装
-date: Fri Jul 15 13:01:55 CST 2016
+date: 2016-07-15 12:35:00 +0800
 ---
 通过`sudo pip install virtualenv`安装，记得加sudo，不加安装完命令找不到不知为何。
 
