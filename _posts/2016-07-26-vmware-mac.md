@@ -7,7 +7,7 @@ date: 2016-07-26 20:13:00 +0800
 
 2. 安装[unlocker](http://pan.baidu.com/s/1dFny5Yp)
 
-3. 新建虚拟机，选择一个.cdr镜像，选择系统为OS X 10.11
+3. 新建虚拟机，选择一个[.cdr镜像](http://pan.baidu.com/s/1slUtMah)，选择系统为OS X 10.11
 ![choose-image](/image/choose-image.png)
 ![choose-os](/image/choose-os.png)
 
