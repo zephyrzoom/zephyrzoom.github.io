@@ -27,3 +27,6 @@ pacman -S zsh git vim
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 pacman -S xorg-xinit xorg-server i3 virtualbox-guest-utils xf86-video-fbdev xf86-video-vesa xorg-server-utils xf86-video-intel xf86-video-nouveau
 edit .xinitrc exec i3
+mount virtualbox-addition.iso
+use lsblk find it and then mount to some dir
+install gcc make perl linux-headers
