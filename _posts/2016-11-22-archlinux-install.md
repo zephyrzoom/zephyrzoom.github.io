@@ -33,3 +33,5 @@ install gcc make perl linux-headers
 install dmenu wqy-microhei ttf-dejavu rxvt-unicode
 create file ~/.Xresources fill with this, http://codepad.org/8hO4Gt5t.
 xrdb ~/.Xresources
+VBoxClient-all
+usermod -aG vboxsf im707
