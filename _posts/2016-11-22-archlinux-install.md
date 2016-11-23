@@ -30,3 +30,4 @@ edit .xinitrc exec i3
 mount virtualbox-addition.iso
 use lsblk find it and then mount to some dir
 install gcc make perl linux-headers
+install dmenu wqy-microhei ttf-dejavu
