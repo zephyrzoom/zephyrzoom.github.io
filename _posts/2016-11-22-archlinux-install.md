@@ -4,7 +4,7 @@ title: 安装Archlinux
 date: 2016-11-22 00:00:00 +0800
 ---
 
-`cfdisk` 分区选择GPT时，需要另外分一个boot分区；若选择DOS类型，需要将一个分区标记为boot
+`cfdisk`分区选择GPT时，需要另外分一个boot分区；若选择DOS类型，需要将一个分区标记为boot
 
 `mkfs.ext4 /dev/sda1`
 
@@ -12,7 +12,7 @@ date: 2016-11-22 00:00:00 +0800
 
 `mount /dev/sda1 /mnt`
 
-`vi /etc/pacman.d/mirrorlist` 将中国的源放在前面
+`vi /etc/pacman.d/mirrorlist`将中国的源放在前面
 
 `pacstrap /mnt base base-devel net-tools`
 
@@ -20,7 +20,7 @@ date: 2016-11-22 00:00:00 +0800
 
 `arch-chroot /mnt`
 
-`vi /etc/locale.gen && locale-gen` 选择解注en_US.UTF-8和zh_CN.UTF-8
+`vi /etc/locale.gen && locale-gen`选择解注en_US.UTF-8和zh_CN.UTF-8
 
 `echo LANG="en_US.UTF-8" >> /etc/locale.conf`
 
@@ -52,16 +52,20 @@ date: 2016-11-22 00:00:00 +0800
 
 `visudo`
 
-`pacman -S zsh git vim`
+`pacman -S zsh git vim xorg-xinit xorg-server i3 virtualbox-guest-utils xf86-video-fbdev xf86-video-vesa xorg-server-utils xf86-video-intel xf86-video-nouveau dmenu wqy-microhei ttf-dejavu rxvt-unicode`
 
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-pacman -S xorg-xinit xorg-server i3 virtualbox-guest-utils xf86-video-fbdev xf86-video-vesa xorg-server-utils xf86-video-intel xf86-video-nouveau
-edit .xinitrc exec i3
-mount virtualbox-addition.iso
-use lsblk find it and then mount to some dir
-install gcc make perl linux-headers
-install dmenu wqy-microhei ttf-dejavu rxvt-unicode
-create file ~/.Xresources fill with this, http://codepad.org/8hO4Gt5t.
-xrdb ~/.Xresources
-VBoxClient-all
-usermod -aG vboxsf im707
+`sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
+编辑`.xinitrc`加入
+```
+xrdb ~/.Xresources &
+VBoxClient-all &
+fcitx &
+
+exec i3
+
+```
+
+新建`~/.Xresources`，将网页http://codepad.org/8hO4Gt5t的设置文件复制进去
+
+`usermod -aG vboxsf im707`
