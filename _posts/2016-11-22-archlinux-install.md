@@ -32,6 +32,18 @@ use lsblk find it and then mount to some dir
 install gcc make perl linux-headers
 install dmenu wqy-microhei ttf-dejavu rxvt-unicode
 create file ~/.Xresources fill with this, http://codepad.org/8hO4Gt5t.
-xrdb ~/.Xresources
-VBoxClient-all
+add into .xinitrc with [[ -f ~/.Xresources ]] && xrdb --merge -I$HOME ~/.Xresources
 usermod -aG vboxsf im707
+add .xinitrc with VBoxClient-all &
+add .zprofile with
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+	exec startx
+fi
+install fcitx fcitx-configtool fcitx-gtk3 fcitx-qt5
+insert the following to .xinitrc
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+
+fcitx &
+install yaourt from github.com/archlinuxfr
