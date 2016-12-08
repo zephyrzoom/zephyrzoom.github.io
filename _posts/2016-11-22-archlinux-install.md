@@ -52,7 +52,7 @@ date: 2016-11-22 00:00:00 +0800
 
 `visudo`
 
-`pacman -S zsh git vim xorg-xinit xorg-server i3 virtualbox-guest-utils xf86-video-fbdev xf86-video-vesa xorg-server-utils xf86-video-intel xf86-video-nouveau dmenu wqy-microhei ttf-dejavu rxvt-unicode fcitx fcitx-configtool fcitx-gtk3 fcitx-qt5`
+`pacman -S zsh git vim xorg-xinit xorg-server i3 virtualbox-guest-utils xf86-video-fbdev xf86-video-vesa xorg-server-utils xf86-video-intel xf86-video-nouveau dmenu wqy-microhei ttf-dejavu rxvt-unicode fcitx fcitx-configtool fcitx-gtk3 fcitx-qt5 feh`
 
 `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
@@ -67,6 +67,7 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
 fcitx &
+feh --bg-scale xxx.jpg &
 
 exec i3
 ```
