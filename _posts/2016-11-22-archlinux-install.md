@@ -72,7 +72,7 @@ feh --bg-scale xxx.jpg &
 exec i3
 ```
 
-新建`~/.Xresources`，填充以该[内容](http://codepad.org/8hO4Gt5t)
+新建`~/.Xresources`，填充以该[内容](http://codepad.org/8jSRXgMC)
 
 新建`~/.zprofile`加入：
 
