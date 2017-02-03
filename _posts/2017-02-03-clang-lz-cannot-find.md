@@ -1,7 +1,7 @@
 ---
 layout: post
 title: clang cannot find -lz
-date: 2017-02-03 16:33:00 +0800
+date: 2017-02-03 17:03:00 +0800
 ---
 
 当使用`clang++ -lz`命令时出现下面错误：
