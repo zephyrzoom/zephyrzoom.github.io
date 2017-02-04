@@ -33,4 +33,4 @@ note: forward declaration of 'std::__cxx11::basic_string<char, std::char_traits<
 error: 1 errors parsing expression
 ```
 
-解决办法：安装libstdc++6-5-dbg
+**解决办法**：安装libstdc++6-5-dbg
