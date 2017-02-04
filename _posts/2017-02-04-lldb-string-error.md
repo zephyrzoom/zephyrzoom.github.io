@@ -12,7 +12,7 @@ date: 2017-02-04 22:40:00 +0800
 // test.cpp
 #include <string>
 
-int main(int argc, char const argv[]) {
+int main(int argc, char const *argv[]) {
     std::string a = "hello";
     std::string b = "world";
     return 0;
