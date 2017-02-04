@@ -1,7 +1,7 @@
 ---
 layout: post
 title: lldb无法调试string类型
-date: 2017-02-03 16:33:00 +0800
+date: 2017-02-04 22:40:00 +0800
 ---
 
 用clang++编译使用了string类型的代码时，再用lldb调试时，无法查看string变量的值。
