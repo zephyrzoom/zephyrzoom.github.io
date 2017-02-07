@@ -71,7 +71,7 @@ feh --bg-scale xxx.jpg &
 
 exec i3
 ```
-**必须在执行`startx`之前创建`.xinitrc`，否则会报`vboxvideo module not found`错误
+**必须在执行`startx`之前创建`.xinitrc`，否则会报`vboxvideo module not found`错误**
 
 新建`~/.Xresources`，填充以该[内容](http://codepad.org/8jSRXgMC)
 
