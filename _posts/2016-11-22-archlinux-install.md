@@ -60,7 +60,7 @@ date: 2016-11-22 00:00:00 +0800
 
 ```
 VBoxClient-all &
-[[ -f ~/.Xresources ]] && xrdb --merge -I$HOME ~/.Xresources
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -71,6 +71,7 @@ feh --bg-scale xxx.jpg &
 
 exec i3
 ```
+**必须在执行`startx`之前创建`.xinitrc`，否则会报`vboxvideo module not found`错误**
 
 新建`~/.Xresources`，填充以该[内容](http://codepad.org/8jSRXgMC)
 
