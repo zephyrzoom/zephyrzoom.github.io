@@ -1,6 +1,6 @@
 ---
 layout: post
-title: `nvm ls-remote`搜不到node版本
+title: nvm ls-remote 搜不到node版本
 date: 2017-02-28 14:36:00 +0800
 ---
 
