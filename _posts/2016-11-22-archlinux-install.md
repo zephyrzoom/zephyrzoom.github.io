@@ -56,9 +56,9 @@ date: 2016-11-22 00:00:00 +0800
 
 `reboot`用上面设置的新账号登录
 
-`pacman -S git vim xorg-xinit xorg-server i3 xf86-video-fbdev xf86-video-vesa xorg-server-utils xf86-video-intel xf86-video-nouveau dmenu wqy-microhei ttf-dejavu rxvt-unicode fcitx fcitx-configtool fcitx-gtk3 fcitx-qt5 feh gcc make linux-headers`
-
 `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
+`pacman -S git vim xorg-xinit xorg-server i3 xf86-video-fbdev xf86-video-vesa xorg-server-utils xf86-video-intel xf86-video-nouveau dmenu wqy-microhei ttf-dejavu rxvt-unicode fcitx fcitx-configtool fcitx-gtk3 fcitx-qt5 feh gcc make linux-headers`
 
 编辑`~/.xinitrc`加入：
 
