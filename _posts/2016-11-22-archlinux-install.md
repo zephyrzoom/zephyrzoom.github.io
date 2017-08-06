@@ -93,7 +93,7 @@ if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
 fi
 ```
 
-`reboot`重启之后VBoxClient-all才会生效
+`reboot`重启之后`VBoxClient-all`才会生效
 
 **必须在执行`startx`之前创建`.xinitrc`，否则会报`vboxvideo module not found`错误**
 
