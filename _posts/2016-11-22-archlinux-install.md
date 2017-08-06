@@ -98,7 +98,7 @@ fi
 **必须在执行`startx`之前创建`.xinitrc`，否则会报`vboxvideo module not found`错误**
 
 安装浏览器，设置`.Xresources`
-新建`~/.Xresources`，填充以该[内容](http://codepad.org/8jSRXgMC)
+新建`~/.Xresources`，填充以该[内容](https://gitlab.com/snippets/34371)
 
 下载个图片改名为`.bg.jpg`放在用户根目录当壁纸
 
