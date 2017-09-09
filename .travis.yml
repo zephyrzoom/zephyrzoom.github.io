@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 2.2
+  - jruby
+  - 2.0.0-p247
+intall:
+  - gem install jekyll
+dist: trusty
+sudo: false
+script:
+  - jekyll build
