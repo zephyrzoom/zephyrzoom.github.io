@@ -3,9 +3,9 @@ rvm:
   - 2.2
   - jruby
   - 2.0.0-p247
-intall:
-  - gem install jekyll
+before_intall:
+  - sudo gem install jekyll
 dist: trusty
-sudo: false
+sudo: required
 script:
   - jekyll build
