@@ -12,3 +12,14 @@ date: 2017-09-09 14:54:00 +0800
 
 游戏逻辑层：
 ![game logic](/image/game-logic.png)
+
+游戏视图层(人)：
+![game view human](/image/game-view.png)
+
+游戏视图层(AI)：
+![game view AI](/image/ai-agent.png)
+
+联机游戏网络架构：
+![network architecture](/image/network-arch.png)
+
+视频接口使用OpenGL，音频接口使用FMod
