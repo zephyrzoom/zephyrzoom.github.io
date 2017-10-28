@@ -5,7 +5,9 @@ data: 2017-10-28 15:19:00 +0800
 ---
 
 突然有一天jekyll开始报错：
+
 `Liquid Exception: no implicit conversion of Fixnum into String in /_layouts/default.html`
+
 断断续续找解决方法，试了好多都不行，应该是github更新了jekyll版本的问题，jekyll之前的版本
 没有问题，更新后出现了。
 
