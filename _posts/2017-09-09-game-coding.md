@@ -120,6 +120,10 @@ Game application Layer是入口点，应该是一个全局单利对象，而且�
 
 lua脚本管理器启动之后的初始化序列由lua脚本控制。
 
+游戏的保存路径通常会被限制在win的用户目录，用`SHGetSpecialFolderPath()`可以获取到用户路径。
+
+游戏的目录通常会是`公司名/游戏名/版本号`，用`SHCreateDirectoryEx()`可以自动创建不存在的路径。
+
 关闭游戏不应该直接用exit(0)拉闸(yank the power cord)，有两种退出方式：
 1. 玩家主动退出
 先检测存档是否有变化，有变化就询问玩家是否需要保存。
