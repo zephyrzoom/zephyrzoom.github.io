@@ -145,3 +145,13 @@ lua脚本管理器启动之后的初始化序列由lua脚本控制。
 游戏中的所有实体都是actor，小到子弹，大到坦克，你能想到的任何东西都是一种actor。
 
 用继承的方式可以实现actor，但是会有多重继承，这样就会有问题。
+
+![mult inherit](/image/mult-inherit.png)
+
+图中ClassA有一个属性name，ClassB和ClassC都继承自ClassA，那么他们都有name属性，ClassD在多重继承他们俩时，就会出现二义性，必须要选择二者之一的属性作为ClassD的属性，这样就会多存储不必要的相同属性，如果继承层次多并且属性数据很大时就会造成大问题。
+
+那么应该使用组合的方法设计Actor，每个Actor设计成由某些组件组成的，设计合理的组件就可以动态的给Actor增删组件，以便改变Actor的行为。
+
+![actor component system](/image/actor-component.png)
+
+用工厂创建Actor，工厂的任务就是读取xml来生产对应的actor。
