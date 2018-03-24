@@ -155,3 +155,5 @@ lua脚本管理器启动之后的初始化序列由lua脚本控制。
 ![actor component system](/image/actor-component.png)
 
 用工厂创建Actor，工厂的任务就是读取json来生产对应的actor。
+
+通过设置actorid可以方便lua进行控制，而不需要了解处理的内部细节。
