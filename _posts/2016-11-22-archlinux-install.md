@@ -6,9 +6,9 @@ date: 2016-11-22 00:00:00 +0800
 
 `cfdisk`分区选择GPT时，需要另外分一个boot分区；若选择DOS类型，需要将一个分区标记为boot
 
-`mkfs.ext4 /dev/sda1`
+`mkfs.ext4 /dev/sda1`格式化主分区
 
-`mkswap /dev/sda2 && swapon /dev/sda2`
+`mkswap /dev/sda2 && swapon /dev/sda2`交换分区
 
 `mount /dev/sda1 /mnt`
 
@@ -24,7 +24,7 @@ date: 2016-11-22 00:00:00 +0800
 
 `echo LANG="en_US.UTF-8" >> /etc/locale.conf`
 
-`ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime`
+`ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime`文件已存在，可使用`ln -sf`
 
 `echo 707host >> /etc/hostname`
 
@@ -51,6 +51,8 @@ date: 2016-11-22 00:00:00 +0800
 `systemctl enable dhcpcd`
 
 `visudo`
+
+`dhcpcd`
 
 `pacman -S zsh git`
 
