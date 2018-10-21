@@ -7,7 +7,8 @@ date: 2018-10-14 18:42:00 +0800
 Linux配置开机自启动程序时，需要创建文件`/etc/rc.local`
 
 在该文件中加入需要执行的命令
-```zsh
+```bash
+#!/bin/bash
 sudo miredo
 sudo /home/zeek/Public/XX-net.sh start
 ```
