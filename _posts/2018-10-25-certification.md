@@ -45,6 +45,8 @@ keyUsage = digitalSignature, keyEncipherment
 
 4. 执行生成证书命令`openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 5000 -config openssl.cnf`
 
-5. 将证书合并为p12证书`openssl pkcs12 -export -out server.p12 -inkey key.pem -in cert.pem`
+5. 查看证书内容`openssl x509 -in cert.pem -text -noout`
 
-6. 如果没有域名的话，common name、DNS和IP都使用相同的IP
+6. 将证书合并为p12证书`openssl pkcs12 -export -out server.p12 -inkey key.pem -in cert.pem`
+
+7. 如果没有域名的话，common name、DNS和IP都使用相同的IP
