@@ -9,7 +9,7 @@
 title: "707"
 email: 707472783@qq.com
 description: > # this means to ignore newlines until "baseurl:"
-    只为证明这个世界我来过
+    地上的蚂蚁 你爬来爬去 我都笑了
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zephyrzoom.github.io" # the base hostname & protocol for your site
 github_username: zephyrzoom
