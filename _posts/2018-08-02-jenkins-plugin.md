@@ -4,7 +4,7 @@ title: jenkins插件开发
 date: 2018-08-02 10:53:00 +0800
 ---
 
-#官方说明
+# 官方说明
 
 实现`org.kohsuke.stapler.StaplerProxy`的`getTarget`方法可以控制权限。
 
@@ -30,7 +30,7 @@ Jenkins大部分结构化配置都使用XStream存储，还有很少一部分使
 4. 插件C依赖插件A和B，`c.jpi!/META-INF/MANIFEST.MF`中就会有`Plugin-Dependencies: a:1.13,b:1.6`这样的代码
 5. UberClassLoader是所有可用插件的代理
 
-#从扩展点出发
+# 从扩展点出发
 
 开发的起始切入点是寻找需要对jenkins进行扩展的阶段，这个是一切开始的基础。比如想要对构建后的某个操作做扩展，那么就
 继承`Notifier`类，重载`perform`方法，这个方法是在构建过程中会执行的，主要的执行逻辑都在这个方法中。
