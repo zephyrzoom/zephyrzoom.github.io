@@ -8,5 +8,5 @@ date: 2018-10-17 16:41:00 +0800
 2. `pvcreate /dev/sdb`创建物理卷
 3. `vgscan`扫描已经创建的卷组，例如查到有`vg_newlab`组
 4. `vgextend vg_newlab /dev/sdb`用新建的物理卷扩展卷组
-5. `lvextend -L 100G /dev/mapper/lv_root`扩展逻辑卷`lv_root`
+5. `lvextend -l +100%FREE /dev/mapper/lv_root`扩展逻辑卷`lv_root`
 6. `resize2fs /dev/mapper/lv_root`重新计算逻辑卷大小
