@@ -14,7 +14,7 @@ date: 2016-11-22 00:00:00 +0800
 
 `vi /etc/pacman.d/mirrorlist`将中国的源放在前面
 
-`pacstrap /mnt base base-devel net-tools dhcpcd linux linux-firmware mkinitcpio`
+`pacstrap /mnt base base-devel net-tools dhcpcd linux linux-firmware mkinitcpio vi`
 
 `genfstab -U -p /mnt >> /mnt/etc/fstab`
 
