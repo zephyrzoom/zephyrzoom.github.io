@@ -14,7 +14,7 @@ date: 2016-11-22 00:00:00 +0800
 
 `vi /etc/pacman.d/mirrorlist`将中国的源放在前面
 
-`pacstrap /mnt base base-devel net-tools`
+`pacstrap /mnt base base-devel net-tools dhcpcd linux linux-firmware mkinitcpio`
 
 `genfstab -U -p /mnt >> /mnt/etc/fstab`
 
@@ -24,9 +24,9 @@ date: 2016-11-22 00:00:00 +0800
 
 `echo LANG="en_US.UTF-8" >> /etc/locale.conf`
 
-`ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime`文件已存在，可使用`ln -sf`
+`ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime`
 
-`echo 707host >> /etc/hostname`
+`echo arch >> /etc/hostname`
 
 `mkinitcpio -p linux`
 
@@ -44,9 +44,9 @@ date: 2016-11-22 00:00:00 +0800
 
 `reboot`
 
-`useradd -m -g users -G wheel -s /bin/zsh im707`
+`useradd -m -g users -G wheel -s /bin/zsh zeek`
 
-`passwd im707`
+`passwd zeek`
 
 `systemctl enable dhcpcd`
 
